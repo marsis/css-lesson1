@@ -1,0 +1,51 @@
+/*** CSS Tutorial: Color page ***/
+
+/* page font */
+body {
+    font: 16px "Comic Sans MS", cursive;
+    background: url("Blue-rule.png");
+}
+
+p:before {
+    content: "";
+    display: block;
+    background: url("Yellow-pin.png"); no-repeat;
+    width: 22px;
+    height: 22px;
+    float: left;
+    margin: 0 6px 0 0;
+}
+/* paragraphs */
+p {
+    color: blue;
+}
+#first:before{
+    font-style: italic;
+
+}
+
+/* initial letters */
+
+strong {
+    background-color: #ddf;
+    color: red;
+    font: 200% serif;
+}
+
+.spinach {
+    color: green;
+    background-color: #ddf;
+}
+
+a.homepage:hover, a.homepage:focus, a.homepage:active {
+    background-color: #666;
+}
+
+div.menu-bar ul ul {
+    display: none;
+}
+
+div.menu-bar li:hover > ul {
+    display: block;
+}
+

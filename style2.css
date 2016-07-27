@@ -1,0 +1,43 @@
+/* numbered paragraphs */
+h3.numbered {counter-reset: mynum;}
+
+h3{
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+li{
+    list-style: upper-roman;
+}
+
+body {counter-reset: headnum;}
+h3:before {
+    content: "(" counter(headnum, upper-latin) ") ";
+    counter-increment: headnum;
+}
+
+ul, #numbered {
+
+    border: 1em solid #69b;
+
+    padding-right:1em;
+
+}
+
+#fixed-pin{
+  position: fixed;
+    right: 0%;
+    bottom: 95%;
+    float: right;
+}
+ul{
+    margin: 0;
+}
+ul, #numbered {float: left;}
+/*h3 {clear: left;}*/
+
+.parent{
+    width:400px;
+    height: 300px;
+
+}

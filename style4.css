@@ -1,0 +1,9 @@
+/*** Print sample ***/
+
+/* defaults  for screen */
+#print-head,
+#print-foot {
+    display: none;
+}
+
+@import url("media.css") print;
